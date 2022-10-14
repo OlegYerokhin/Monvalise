@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Monvalise</title>
+</head>
+
+<body>
+    <header class="border-bottom">
+        <div class="header-top-block d-flex justify-content-center align-items-center d-none d-sm-flex">
+            <div class="header-img">
+                <img src="./img/like-emoji.png" alt="like-emoji" />
+                <img src="./img/dress-emoji.png" alt="dress-emoji" />
+            </div>
+            <p class="top-text">
+                Брендовий верхній одяг від 899 грн
+            </p>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg mt-3">
+                <div class="d-flex container justify-content-center border-bottom pb-4">
+                    <a class="navbar-brand col-2" href="#">
+                        <img class="navbar-logo" src="./img/monvalise.png" alt="monvalise" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="navbar-nav collapse navbar-collapse col-8" id="navbarTogglerDemo03">
+                        <input class="search-item align-middle mx-4" type="search" placeholder="Знайти речі або бренди"
+                            aria-label="Search" />
+                        <button class="btn btn-dark add-btn" type="submit">
+                            Додати товар
+                        </button>
+                    </form>
+                    <ul class="navbar-nav collapse navbar-collapse col" id="navbarTogglerDemo03">
+                        <li class="nav-item dropdown lang-dropdown mx-4">
+                            <a class="btn dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-display="static">Укр</a>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <p class="dropdown-item cursor-pointer">Укр</p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-item cursor-pointer">Eng</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item navbar-img" src="./img/like.png" alt="like" />
+                            <span
+                                class=" translate-middle badge rounded-pill bg-light text-dark border border-3 border-white">8</span>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item navbar-img" src="./img/message.png" alt="message">
+                            <span
+                                class=" translate-middle badge rounded-pill bg-danger border border-3 border-white">3</span>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item navbar-img" src="./img/cart.png" alt="cart">
+                            <span
+                                class=" translate-middle badge rounded-pill bg-light text-dark border border-3 border-white">3</span>
+                        </li>
+                        <li class="nav-item dropdown ms-1">
+                            <a class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-display="static">
+                                <img src="./img/avatar.png" alt="avatar">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li class="dropdown-item">
+                                    <p>Some item</p>
+                                </li>
+                                <li class="dropdown-item">
+                                    <p>Something else</p>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li class="dropdown-item">
+                                    <p>Something more</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="home-tab"
+                        data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                        aria-selected="true">Головна</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-uppercase fw-bold tab-item text-dark" id="catalog-tab"
+                        data-bs-toggle="tab" data-bs-target="#catalog" type="button" role="tab" aria-controls="catalog"
+                        aria-selected="false">Каталог</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="ladies-tab"
+                        data-bs-toggle="tab" data-bs-target="#ladies" type="button" role="tab" aria-controls="ladies"
+                        aria-selected="false">Жінкам</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="man-tab" data-bs-toggle="tab"
+                        data-bs-target="#man" type="button" role="tab" aria-controls="man"
+                        aria-selected="false">Чоловікам</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="kids-tab"
+                        data-bs-toggle="tab" data-bs-target="#kids" type="button" role="tab" aria-controls="man"
+                        aria-selected="false">Дитячі речі</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="auction-tab"
+                        data-bs-toggle="tab" data-bs-target="#auction" type="button" role="tab" aria-controls="auction"
+                        aria-selected="false">Аукціон</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="brands-tab"
+                        data-bs-toggle="tab" data-bs-target="#brands" type="button" role="tab" aria-controls="brands"
+                        aria-selected="false">Бренди</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="actions-tab"
+                        data-bs-toggle="tab" data-bs-target="#actions" type="button" role="tab" aria-controls="actions"
+                        aria-selected="false">Акції</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="auth-tab"
+                        data-bs-toggle="tab" data-bs-target="#auth" type="button" role="tab" aria-controls="auth"
+                        aria-selected="false">Аутентифікація</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bold tab-item text-dark" id="blog-tab"
+                        data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog"
+                        aria-selected="false">Блог</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <nav class="mt-4" style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-2">
+                    <li class="breadcrumb-item" aria-current="page"><a href="#" class=" text-decoration-none fw-bold">Головна</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#" class=" text-decoration-none">Каталог одягу</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="tab-content my-4" id="myTabContent">
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab"><h2>Головна</h2></div>
+                    <div class="tab-pane fade active show" id="catalog" role="tabpanel" aria-labelledby="catalog-tab"><h2>Каталог одягу</h2></div>
+                    <div class="tab-pane fade" id="ladies" role="tabpanel" aria-labelledby="ladies-tab"><h2>Жінкам</h2></div>
+                    <div class="tab-pane fade" id="man" role="tabpanel" aria-labelledby="man-tab"><h2>Чоловікам</h2></div>
+                    <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab"><h2>Дитячі речі</h2></div>
+                    <div class="tab-pane fade" id="auction" role="tabpanel" aria-labelledby="auction-tab"><h2>Аукціон</h2></div>
+                    <div class="tab-pane fade" id="brands" role="tabpanel" aria-labelledby="brands-tab"><h2>Бренди</h2></div>
+                    <div class="tab-pane fade" id="actions" role="tabpanel" aria-labelledby="actions-tab"><h2>Акції</h2></div>
+                    <div class="tab-pane fade" id="auth" role="tabpanel" aria-labelledby="auth-tab"><h2>Аутентифікація</h2></div>
+                    <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab"><h2>Блог</h2></div>
+                </div>
+                <div class="d-flex row filters">
+                    <div class="d-flex justify-content-between my-3">
+                        <h3>Фільтри</h3>
+                        <div class="d-flex">
+                            <p class="to-sort">Сортувати за:</p>
+                            <div class="input-group mb-3">
+                                <button type="button" class="btn border border-1 border-white btn-light sort-type-btn">За замовчуванням</button>
+                                <button type="button" class="btn border border-1 border-white btn-light dropdown-toggle sort-type-dropdown-btn"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Популярні</a></li>
+                                    <li><a class="dropdown-item" href="#">Від дешевих до дорогих</a></li>
+                                    <li><a class="dropdown-item" href="#">Від дорогих до дешевих</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-3">
+                        <div class="accordion accordion-flush" id="filterAccordion">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="category">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategory" aria-expanded="true" aria-controls="collapseCategory">
+                                        Категорії
+                                    </button>
+                                </h4>
+                                <div id="collapseCategory" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="category" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="shirts" />
+                                        Футболки
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="pants" />
+                                        Штани
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="shoes" />
+                                        Взуття
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="suits" />
+                                        Костюми
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="dresses" />
+                                        Сукні
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="jackets" />
+                                        Куртки
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="accessories" />
+                                        Аксесуари
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="price">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                                        Ціна
+                                    </button>
+                                </h4>
+                                <div id="collapsePrice" class="accordion-collapse  mx-3 my-4" aria-labelledby="price" data-bs-parent="#filterAccordion">
+                                    <input type="range">
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="seller">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeller" aria-expanded="true" aria-controls="collapseSeller">
+                                        Продавець
+                                    </button>
+                                </h4>
+                                <div id="collapseSeller" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="seller" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="lovebrand" />
+                                        LoveBrand
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="sell-for-men" />
+                                        Sell_For_Men
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="brandear" />
+                                        Brandear
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="alexalex" />
+                                        Alexalex
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="sell-buy" />
+                                        SellBuy
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="deeva-sofia" />
+                                        Deeva_Sofia
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="brand">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrand" aria-expanded="true" aria-controls="collapseBrand">
+                                        Бренд
+                                    </button>
+                                </h4>
+                                <div id="collapseBrand" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="brand" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="louis-vuitton" />
+                                        Louis Vuitton
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="thom-browne" />
+                                        Thom Browne
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="canali" />
+                                        Canali
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="elena-ghisellini" />
+                                        Elena Ghisellini
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="acne" />
+                                        Acne
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="woolrich" />
+                                        Woolrich
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="gucci" />
+                                        Gucci
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="hache" />
+                                        Hache
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="sex">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSex" aria-expanded="true" aria-controls="collapseSex">
+                                        Стать
+                                    </button>
+                                </h4>
+                                <div id="collapseSex" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="sex" data-bs-parent="#filterAccordion">
+                                    <label class="d-flex justify-content-around my-2">
+                                        <input class="mx-3" type="checkbox" name="woman" />
+                                        <span class="sex-item">Жінкам</span>
+                                        <span class="sex-item-quantity">(64)</span>
+                                    </label>
+                                    <label class="d-flex justify-content-around my-2">
+                                        <input class="mx-3" type="checkbox" name="man" />
+                                        <span class="sex-item">Чоловікам</span>
+                                        <span class="sex-item-quantity">(16)</span>
+                                    </label>
+                                    <label class="d-flex justify-content-around my-2">
+                                        <input class="mx-3" type="checkbox" name="unisex" />
+                                        <span class="sex-item">Унісекс</span>
+                                        <span class="sex-item-quantity">(24)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="size">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSize" aria-expanded="true" aria-controls="collapseSize">
+                                        Розмір
+                                    </button>
+                                </h4>
+                                <div id="collapseSize" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="size" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="s" />
+                                        S
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="m" />
+                                        M
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="l" />
+                                        L
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="xl" />
+                                        XL
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="xxl" />
+                                        XXL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="color">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="true" aria-controls="collapseColor">
+                                        Колір
+                                    </button>
+                                </h4>
+                                <div id="collapseColor" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="color" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="black" />
+                                        Чорний
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="white" />
+                                        Білий
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="blue" />
+                                        Синій
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="green" />
+                                        Зелений
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="orange" />
+                                        Помаранчевий
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="yellow" />
+                                        Жовтий
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="material">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaterial" aria-expanded="true" aria-controls="collapseMaterial">
+                                        Матеріал
+                                    </button>
+                                </h4>
+                                <div id="collapseMaterial" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="material" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="silk" />
+                                        Шовк
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="wool" />
+                                        Шерсть
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="synthetic" />
+                                        Синтетика
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="jeans" />
+                                        Джинс
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="fleece" />
+                                        Фліс
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="suede" />
+                                        Замша
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="season">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeason" aria-expanded="true" aria-controls="collapseSeason">
+                                        Сезон
+                                    </button>
+                                </h4>
+                                <div id="collapseSeason" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="season" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="spring" />
+                                        Весна
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="summer" />
+                                        Літо
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="autumn" />
+                                        Осінь
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="winter" />
+                                        Зима
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="style">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStyle" aria-expanded="true" aria-controls="collapseStyle">
+                                        Стиль
+                                    </button>
+                                </h4>
+                                <div id="collapseStyle" class="accordion-collapse collapse mx-3 my-4" aria-labelledby="style" data-bs-parent="#filterAccordion">
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="business" />
+                                        Діловий
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="evening" />
+                                        Вечірній
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="informal" />
+                                        Неформальний
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="sport" />
+                                        Спортивний
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="glamour" />
+                                        Гламурний
+                                    </label>
+                                    <label class="d-block my-2">
+                                        <input class="mx-3" type="checkbox" name="military" />
+                                        Мілітарі
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="cards-block col-9 d-flex">
+                        <div>
+                            <div class="card px-0 ms-3 me-2" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex m-auto" src="./img/jeans-vuitton.png" alt="jeans-vuitton">
+                                    <span class="badge top-badge text-dark d-flex mb-3">ТОП</span>
+                                    <h6 class="card-subtitle mb-1 text-muted">Louis Vuitton</h6>
+                                    <h5 class="card-title mb-4">Темно-сині джинси Louis Vuitton</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">5499</p>
+                                            <p class="actual-price">3799</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Херсон</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/love-brand.png" alt="love-brand">
+                                                <p class="seller">LoveBrand</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/clatch-vuitton.png" alt="clatch-vuitton">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Louis Vuitton</h6>
+                                    <h5 class="card-title mb-4">Клатч Louis Vuitton Limelight</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">4999</p>
+                                            <p class="actual-price">3499</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Дніпро</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/brandear.png" alt="brandear">
+                                                <p class="seller">Brandear</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/dress-gucci.png" alt="dress-gucci">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Gucci</h6>
+                                    <h5 class="card-title mb-4">Довга сукня Gucci</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">11999</p>
+                                            <p class="actual-price">8599</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Рівне</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/sell-buy.png" alt="sell-buy">
+                                                <p class="seller">SellBuy</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card px-0 ms-3 me-2" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex m-auto" src="./img/jacket-browne.png" alt="jacket-browne">
+                                    <span class="badge top-badge text-dark d-flex mb-3">ТОП</span>
+                                    <h6 class="card-subtitle mb-1 text-muted">Thom Browne</h6>
+                                    <h5 class="card-title mb-4">Чорний піджак Thom Browne</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">11999</p>
+                                            <p class="actual-price">8599</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Хмельницький</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/sell-for-man.png" alt="sell-for-man">
+                                                <p class="seller">Sell_For_Men</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <span class="d-flex">
+                                        <span class="badge top-badge bg-light text-dark">organic</span>
+                                        <img class="favorite-btn h-100" src="./img/favorite.png" alt="favorite">
+                                    </span>
+                                    <img class="d-flex mx-auto mb-2" src="./img/bag-elena.png" alt="bag-elena">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Elena Ghisellini</h6>
+                                    <h5 class="card-title mb-4">Сумка з декором Elena Ghisellini</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">1999</p>
+                                            <p class="actual-price">1599</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Дніпро</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/brandear.png" alt="brandear">
+                                                <p class="seller">Brandear</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/bomber-woolrich.png" alt="bomber-woolrich">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Woolrich</h6>
+                                    <h5 class="card-title mb-4">Помаранчевий бомбер Woolrich</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">1999</p>
+                                            <p class="actual-price">1599</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Кропивницький</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/deeva.png" alt="deeva">
+                                                <p class="seller">Deeva_Sofia</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card px-0 ms-3 me-2" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/jacket-canali.png" alt="jacket-canali">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Canali</h6>
+                                    <h5 class="card-title mb-4">Вовняний піджак Canali</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">4999</p>
+                                            <p class="actual-price">2599</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Хмельницький</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/sell-for-man.png" alt="sell-for-man">
+                                                <p class="seller">Sell_For_Men</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/bomber-acne.png" alt="bomber-acne">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Acne</h6>
+                                    <h5 class="card-title mb-4">Бомбер Acne</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">5999</p>
+                                            <p class="actual-price">4199</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Київ</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/alex.png" alt="alexalex">
+                                                <p class="seller">Alexalex</p>
+                                            </span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 ms-3 me-2 mt-4" style="width: 19.6rem;">
+                                <div class="card-body py-4 px-4">
+                                    <img class="d-flex favorite-btn" src="./img/favorite.png" alt="favorite">
+                                    <img class="d-flex mx-auto mb-2 pb-1" src="./img/coat-hache.png" alt="coat-hache">
+                                    <h6 class="card-subtitle mb-1 pt-4 text-muted">Hache</h6>
+                                    <h5 class="card-title mb-4">Салатове пальто Hache</h5>
+                                    <div class="goods-info d-flex justify-content-between">
+                                        <span class="first-line">
+                                            <p class="text-muted old-price text-decoration-line-through mb-0">5999</p>
+                                            <p class="actual-price">4199</p>
+                                        </span>
+                                        <span class="d-grid">
+                                            <span class="location-line">
+                                                <img class="location-img" src="./img/location.png" alt="location">
+                                                <p class="city mb-0">Київ</p>
+                                            </span>
+                                            <span class="location-line">
+                                                <img class="px-2" src="./img/love-brand.png" alt="love-brand">
+                                                <p class="seller">LoveBrand</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-9 d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination align-items-center">
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-pill" href="#">Попередня</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">1</a></li>
+                                <li class="page-item active p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">2</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">3</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">4</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">5</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">6</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">7</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-circle" href="#">8</a></li>
+                                <li class="page-item p-1"><a class="page-link text-dark border border-2 rounded-pill" href="#">Наступна</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light d-flex justify-content-center">
+        <div class="container">
+            <div class="row footer-content border-bottom">
+                <div class="col-3">
+                    <ul>
+                        <li class="mt-1 mb-2">Довідка для покупців</li>
+                        <li class="mt-1 mb-2">Отримати підтримку</li>
+                        <li class="mt-1 mb-2">Як купувати</li>
+                        <li class="mt-1 mb-2">Як залишити корисний відгук</li>
+                        <li class="mt-1 mb-2">Програма Захисту Покупців</li>
+                        <li class="mt-1 mb-2">Рекомендації з безпечних покупок</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    
+                    <ul>
+                        <li class="mt-1 mb-2">Довідка для продавців</li>
+                        <li class="mt-1 mb-2">Як почати продавати</li>
+                        <li class="mt-1 mb-2">Тарифи</li>
+                        <li class="mt-1 mb-2">Угода користувача</li>
+                        <li class="mt-1 mb-2">Політика конфіденційності</li>
+                        <li class="mt-1 mb-2">Правила користування порталом</li>
+                        <li class="mt-1 mb-2">Бонусна програма</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li class="mt-1 mb-2">Про нас</li>
+                        <li class="mt-1 mb-2">Довідка та FAQ</li>
+                        <li class="mt-1 mb-2">Захист легальності контенту</li>
+                        <li class="mt-1 mb-2">Адміністрація</li>
+                        <li class="mt-1 mb-2">Вакансії</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li class="mt-1 mb-2">Мобільний додаток</li>
+                        <li class="mt-1 mb-2"><img class="google-play" src="./img/google-play.png" alt="google-play"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="monvalise-sign">
+                <p>© 2022 Monvalise</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

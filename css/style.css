@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Stolzl-Light;
+    src: url(../fonts/Stolzl-Light.ttf);
+}
+
+@font-face {
+    font-family: Stolzl-Regular;
+    src: url(../fonts/Stolzl-Regular.ttf);
+}
+
+p {
+  font-family: 'Stolzl-Regular';
+}
+
+main {
+  margin-bottom: 112px;
+}
+
+.header-top-block {
+    background-color: #CBDCFF;
+    color: #0F1A34;
+    padding: 10px 0;
+}
+
+.top-text {
+    display: contents;
+}
+
+.header-img {
+  padding: 0 10px;
+}
+
+.search-item {
+  width: -webkit-fill-available;
+  border: 1px solid #E0E3E3;
+  border-radius: 4px;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: 18px 11px;
+  padding: 11px 11px 11px 53px;
+  font-size: 12px;
+  font-family: 'Stolzl-Light';
+}
+
+.add-btn {
+  font-family: 'Stolzl-Regular';
+  font-size: 12px !important;
+  min-width: max-content;
+  padding: 10px 20px !important;
+}
+
+.lang-dropdown {
+  font-family: 'Stolzl-Regular';
+}
+
+.tab-item {
+  font-size: 13px;
+  font-family: 'Stolzl-Regular';
+}
+
+.nav.nav-tabs {
+  border-bottom: transparent;
+}
+
+
+
+.nav-tabs .nav-link:hover {
+  border-color: transparent!important;
+  transition: none!important;
+}
+
+.nav-link {
+  
+  transition: none!important;
+}
+
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 3px solid #000!important;
+}
+
+.breadcrumb a {
+  font-family: 'Stolzl-Regular';
+  font-size: 12px;
+  color: #000;
+}
+
+.breadcrumb-item.active a {
+  font-family: 'Stolzl-Light';
+}
+
+.tab-content h2 {
+  font-family: 'Stolzl-Regular';
+  font-size: 28px;
+}
+
+.filters {
+  font-family: 'Stolzl-Regular';
+}
+
+.to-sort {
+  min-inline-size: max-content;
+  align-self: center;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.sort-type-btn {
+  border-top-left-radius: 1.25rem!important;
+  border-bottom-left-radius: 1.25rem!important;
+  font-size: 12px!important;
+}
+
+.sort-type-dropdown-btn {
+  border-top-right-radius: 1.25rem!important;
+  border-bottom-right-radius: 1.25rem!important;
+}
+
+.dropdown-toggle::after {
+  vertical-align: middle!important;
+  margin: 5px;
+}
+
+aside {
+  margin-right: -12px;
+}
+
+aside h3 {
+  font-family: 'Stolzl-Light';
+  font-size: 22px;
+  color: #5C5F60;
+}
+
+.accordion-button {
+  background-color: #EFF1F1!important;
+  font-family: 'Stolzl-Light';
+  font-size: 14px;
+}
+
+.accordion-item {
+  margin: 2px;
+  border: none!important;
+  font-family: 'Stolzl-Regular';
+  font-size: 14px;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none!important;
+}
+
+.sex-item {
+  margin-inline-end: auto;
+}
+
+.sex-item-quantity {
+  font-family: 'Stolzl-Light';
+}
+
+.favorite-btn {
+  margin-inline-start: auto;
+}
+
+.top-badge {
+  width: fit-content;
+  background-color: #B4FFF0;
+}
+
+.cards-block {
+  margin-bottom: 60px;
+}
+
+.card {
+  font-family: 'Stolzl-Regular';
+}
+
+.card-subtitle {
+  font-size: 10px;
+}
+
+.card-title {
+  font-size: 14px;
+}
+
+.location-line {
+  display: -webkit-inline-box;
+  justify-self: flex-end;
+}
+
+.location-line img {
+  vertical-align: unset!important;
+}
+
+.location-img {
+  padding-right: 2px;
+}
+
+.actual-price {
+  font-weight: bold;
+}
+
+.city {
+  font-family: 'Stolzl-Light';
+}
+
+.page-item {
+  font-family: 'Stolzl-Regular';
+  font-size: 10px;
+}
+
+.page-item.active .page-link {
+  border-color: #000!important;
+  background-color: transparent!important;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.page-item:first-child .page-link {
+  font-size: 12px;
+}
+
+.page-item:last-child .page-link {
+  font-size: 12px;
+}
+
+footer {
+  padding: 68px 0 30px;
+}
+
+footer li {
+  list-style: none;
+  font-family: 'Stolzl-Regular';
+  font-size: 14px;
+}
+
+.google-play {
+  width: 146px;
+  height: 44px;
+}
+
+.footer-content {
+  padding-bottom: 70px;
+}
+
+.monvalise-sign {
+  margin-top: 38px;
+}
+
+.monvalise-sign p {
+  font-family: 'Stolzl-Light';
+}
